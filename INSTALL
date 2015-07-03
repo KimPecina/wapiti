@@ -36,6 +36,6 @@ requirements then :
 * Install it and change the PATH environment variable to append the Python path
 * Download a requests archive from http://docs.python-requests.org/en/latest/user/install/
 * Extract the archive and call the setup.py script from the archive with "python setup.py install"
-* Download BeautifulSoup 3 from http://www.crummy.com/software/BeautifulSoup/
+* Download BeautifulSoup 4 from http://www.crummy.com/software/BeautifulSoup/
 * Extract the archive and call the setup.py script from the archive with "python setup.py install"
 

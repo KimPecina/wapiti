@@ -72,10 +72,13 @@ class jsoncookie(object):
         if not '.' in domain:
             domain += ".local"
 
-        dotdomain = domain if domain[0] == '.' else '.' + domain
-        exploded = dotdomain.split(".")
-        parent_domains = [".%s" % (".".join(exploded[x:])) for x in range(1, len(exploded) - 1)]
-        matching_domains = [d for d in parent_domains if d in self.cookiedict]
+        # dotdomain = domain if domain[0] == '.' else '.' + domain
+        # exploded = dotdomain.split(".")
+        # parent_domains = [".%s" % (".".join(exploded[x:])) for x in range(1, len(exploded) - 1)]
+        # matching_domains = [d for d in parent_domains if d in self.cookiedict]
+
+        # accept all cookies, i.e., do not do any filtering
+        matching_domains = [d for d in self.cookiedict]
         if not matching_domains:
             return cj
 
